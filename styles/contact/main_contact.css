@@ -1,0 +1,72 @@
+.imgheader {
+  background-image: url(../img/contact/club2.png);
+}
+
+.contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+}
+
+.contenu strong {
+  font-weight: 800;
+}
+
+.contenu h2 {
+  font-family: "Futura Heavy Italic";
+  padding-top: 20px;
+  margin: 0;
+}
+
+.contenu h2::after {
+  background-color: var(--vert);
+  margin: 0 auto;
+  display: block;
+  width: 20%;
+  height: 5px;
+  border-radius: 3px;
+  content: "";
+}
+
+.contenu__coordonnees__description {
+  font-family: "Futura Book";
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.contenu__coordonnees__contact {
+  font-family: "Futura Book";
+  padding-top: 15px;
+}
+
+.contenu__coordonnees__contact a {
+  color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  .contenu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contenu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=main_contact.css.map */

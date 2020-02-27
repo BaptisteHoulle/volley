@@ -1,0 +1,87 @@
+@media screen and (min-width:768px) AND (max-width: 1199.99px) {
+    .bases_volley {
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .partiedeux {
+        background-color: white;
+        margin-top: 60px;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        margin: 30px auto;
+
+        &__gauche {
+            display: block;
+            margin: auto;
+        }
+
+        &__droite {
+            &__img {
+                display: block;
+                margin: 30px auto;
+            }
+        }
+    }
+
+    .partieune {
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+        display: block;
+    
+        &__flex1 {
+            display: flex;
+            justify-content: center;
+    
+            &__img {
+                margin-left: 30px;
+                width: 30%;
+                height: 30%;
+                margin-top: 30px;
+            }
+
+            &__texte {
+                width: 400px;
+                text-align: justify;
+                margin-left: 40px;
+                font-size: 12pt;
+            }
+        }
+    
+        &__flex2 {
+            display: flex;
+            padding-bottom: 50px;
+            justify-content: center;
+    
+            &__img {
+                margin-left: 40px;
+                width: 30%;
+                height: 30%;
+                margin-top: 70px;
+                
+            }
+    
+            &__texte {
+                width: 400px;
+                text-align: justify;
+                margin-left: 40px;
+                font-size: 12pt;
+            }
+    
+            &__textes {
+                margin-top: 60px;
+            }
+        }
+    }
+
+    .fonctions {
+        flex-direction: column;
+        margin: 80px auto;
+        width: 100%;
+    }
+}

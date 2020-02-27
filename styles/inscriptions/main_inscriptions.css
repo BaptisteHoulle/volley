@@ -1,0 +1,496 @@
+.inscriptions {
+  background-color: var(--clair);
+}
+
+.inscriptions h2 {
+  font-family: 'Futura Heavy Italic';
+  font-weight: 100;
+}
+
+.inscriptions h2:after {
+  background-color: var(--vert);
+  margin: 0 auto;
+  display: block;
+  width: 20%;
+  height: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  content: "";
+}
+
+.inscriptions h3 {
+  font-family: 'Futura Heavy';
+  font-weight: 100;
+  font-size: 18pt;
+  margin-left: 20px;
+}
+
+.inscriptions h3:after {
+  background-color: var(--vert);
+  margin: 5px 30px;
+  display: block;
+  width: 20%;
+  height: 4px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  content: "";
+}
+
+.inscriptions ul {
+  list-style-type: none;
+}
+
+.inscriptions__imgheader {
+  background-image: url("../img/inscriptions/inscriptions.png");
+}
+
+.inscriptions__imgheader__titrepage {
+  color: white;
+  font-size: 40pt;
+  font-family: 'Futura Heavy Italic';
+  font-weight: 100;
+}
+
+.bulletin {
+  padding: 15px;
+  margin: 20px auto;
+  background-color: white;
+  width: 1100px;
+}
+
+.bulletin__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 40px;
+}
+
+.bulletin__texteprincipal {
+  font-family: 'Futura Heavy';
+  font-size: 13pt;
+}
+
+.bulletin__liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bulletin__liste li {
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.bulletin__liste ul {
+  font-family: 'Futura Book';
+  margin: 0 40px;
+}
+
+.inscription {
+  margin: 40px auto;
+}
+
+.inscription__texteprincipal {
+  text-align: center;
+  font-family: 'Futura Heavy';
+  font-size: 13pt;
+}
+
+.inscription button {
+  cursor: pointer;
+  background-color: var(--vert);
+  border: none;
+  color: black;
+  font-size: 16pt;
+  font-family: 'Futura Heavy Italic';
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.inscription button a {
+  color: black;
+}
+
+.inscription__boutons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inscription__boutons button {
+  margin: 0 20px;
+}
+
+.inscription__boutons__ou {
+  font-family: 'Futura Book';
+}
+
+.inscription__bouton {
+  display: block;
+  margin: 30px auto;
+}
+
+.inscription_infos_joueur, .inscription_valider_bulletins, .inscription_valider_infos {
+  text-align: center;
+}
+
+.inscription_valider_bulletins, .inscription_valider_infos {
+  margin-top: 50px;
+}
+
+.inscription_valider_bulletins input, .inscription_valider_infos input {
+  font-family: "Futura Regular";
+  width: 200px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.inscription_valider_bulletins input:hover, .inscription_valider_infos input:hover {
+  background-color: var(--bleu);
+  color: white;
+}
+
+.informations {
+  background-color: white;
+  padding: 20px;
+}
+
+.informations__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+}
+
+.informations__download {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.informations__download__partie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.informations__download__partie p {
+  font-family: 'Futura Heavy';
+  font-size: 13pt;
+}
+
+.informations__download__partie img {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.charte {
+  padding-top: 20px;
+}
+
+.charte__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+}
+
+.charte__partie1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.charte__partie1__texte {
+  width: 600px;
+  margin-right: 40px;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: 'Futura Book';
+}
+
+.charte__partie1__texte ul {
+  padding: 0;
+}
+
+.charte__partie1__texte ul li {
+  margin: 10px 0;
+}
+
+.charte__partie1__texte__violet {
+  font-size: 20pt;
+  text-align: center;
+  font-family: 'Futura Heavy Italic';
+  font-weight: 100;
+  color: var(--bleu);
+  margin-bottom: 30px;
+}
+
+.charte__partie1__img img {
+  width: 600px;
+}
+
+.charte__titrepartie2 {
+  text-align: center;
+  font-size: 20pt;
+  font-family: 'Futura Heavy Italic';
+  font-weight: 100;
+  color: var(--bleu);
+  margin-bottom: 30px;
+}
+
+.charte__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.charte__flex__gauche {
+  background-color: white;
+  width: 600px;
+  margin: 0 30px;
+}
+
+.charte__flex__gauche ul {
+  font-family: 'Futura Book';
+}
+
+.charte__flex__gauche ul li {
+  margin: 10px 0;
+  width: 520px;
+  font-size: 13pt;
+}
+
+.charte__flex__droite {
+  background-color: white;
+  width: 600px;
+  margin: 0 30px;
+}
+
+.charte__flex__droite ul {
+  font-family: 'Futura Book';
+}
+
+.charte__flex__droite ul li {
+  margin: 10px 0;
+  width: 500px;
+  font-size: 13pt;
+}
+
+.charte__partie3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.charte__partie3__img img {
+  width: 550px;
+  margin-top: 40px;
+  -webkit-box-shadow: -14px -14px 1px #303030;
+          box-shadow: -14px -14px 1px #303030;
+}
+
+.charte__partie3__texte {
+  text-align: justify;
+  margin-left: 60px;
+  width: 550px;
+  font-family: 'Futura Book';
+}
+
+.charte__partie3__texte__violet {
+  font-size: 20pt;
+  text-align: center;
+  font-family: 'Futura Heavy Italic';
+  font-weight: 100;
+  color: var(--bleu);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .imgheader__titrepage {
+    font-size: 25pt;
+  }
+  .bulletin {
+    width: 700px;
+  }
+  .charte__partie1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .charte__partie1__img img {
+    width: 500px;
+  }
+  .charte__partie1__texte {
+    margin-top: 0;
+  }
+  .charte__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .charte__partie3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .charte__partie3__texte {
+    width: 600px;
+    margin: auto;
+  }
+  .charte__partie3__img img {
+    width: 400px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inscriptions h3 {
+    font-size: 15pt;
+  }
+  .inscriptions button {
+    font-size: 14pt;
+  }
+  .informations__titrepartie {
+    font-size: 18pt;
+  }
+  .informations__download {
+    display: block;
+    margin: auto;
+  }
+  .informations__download__partie {
+    margin: 0px 20px;
+  }
+  .imgheader__titrepage {
+    font-size: 15pt;
+  }
+  .bulletin {
+    width: 80%;
+  }
+  .bulletin__titrepartie {
+    font-size: 18pt;
+  }
+  .bulletin__liste {
+    display: block;
+    margin-left: -60px;
+    width: 120%;
+  }
+  .charte__titrepartie {
+    font-size: 18pt;
+  }
+  .charte__titrepartie2 {
+    font-size: 15pt;
+  }
+  .charte__partie1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .charte__partie1__img img {
+    width: 300px;
+  }
+  .charte__partie1__texte {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .charte__partie1__texte__violet {
+    font-size: 15pt;
+  }
+  .charte__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .charte__flex__gauche {
+    width: 100%;
+  }
+  .charte__flex__gauche li {
+    width: 80%;
+  }
+  .charte__flex__droite {
+    width: 100%;
+  }
+  .charte__flex__droite li {
+    width: 80%;
+  }
+  .charte__partie3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .charte__partie3__texte {
+    width: 80%;
+    margin: auto;
+  }
+  .charte__partie3__texte__violet {
+    font-size: 15pt;
+  }
+  .charte__partie3__img img {
+    width: 300px;
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=main_inscriptions.css.map */

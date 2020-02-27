@@ -1,0 +1,12 @@
+@import 'pc_accueil';
+@import 'tablette_accueil';
+@import 'mobile_accueil';
+
+@media (max-width: 1200px) {
+
+iframe {
+    margin-top: 30px;
+    width: 100%;
+}
+
+}

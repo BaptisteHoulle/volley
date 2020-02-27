@@ -1,0 +1,322 @@
+.actus {
+    background-color: var(--clair);
+
+    &_imgheader {
+        background-image: url(../img/actualites/actualites.png);
+        @include header;
+
+        &_titrepage {
+            @include titre_header;
+        }
+    }
+
+    h2 {
+        @include sous_titre;
+        font-size: 25pt;
+    }
+
+    h2:after {
+        @include trait;
+    }
+
+    b {
+        font-weight: 1000;
+    }
+
+    &_post {
+        width: 1200px;
+        margin: 70px auto 0 auto;
+        background-color: white;
+        padding: 30px;
+        box-sizing: content-box;
+        font-family: "Futura Regular";
+
+        h2 {
+            margin: 0 0 30px 0;
+        }
+
+        a {
+            text-decoration: underline !important;
+            color: black;
+        }
+
+        &_images {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                margin: 5px;
+            }
+        }
+    }
+
+    &_pagination {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin: 90px auto;
+
+        &_page, &_actif {
+            font-family: "Futura Regular";
+            font-size: 27px;
+
+            a {
+                color: black;
+            }
+
+            a:hover {
+                color: var(--bleu);
+            }
+        }
+
+        &_actif {
+            color: var(--bleu);
+        }
+    }
+
+    &_a_venir {
+        text-align: center;
+        font-size: 30pt;
+        font-family: "Futura Regular";
+    }
+}
+
+.actus_wysiwyg {
+    .container {
+        margin: 80px 0;
+        flex-direction: column;
+        align-items: center;
+    
+        &_titre {
+            @include sous_titre;
+            font-size: 25pt;
+            margin: 40px 0;
+        }
+    
+        &_titre:after {
+            @include trait;
+        }
+    
+        b {
+            font-weight: 1000;
+        }
+    
+        .btn-group {
+            margin: 0 5px;
+        
+            .btn {
+                background-color: white;
+                color: var(--gris);
+            }
+        }
+    
+        label {
+            margin: 20px 0 0 0;
+            font-family: "Futura Regular";
+            font-size: 16pt;
+        }
+    
+        input[type="text"] {
+            width: 300px;
+        }
+    
+        .btn-toolbar {
+            margin-top: 40px;
+        }
+    
+        .envoi_actu {
+            text-align: center;
+            margin-top: 30px;
+    
+            input {
+                margin: 10px;
+                font-family: "Futura Regular";
+                width: 170px;
+                height: 35px;
+                border: none;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                transition: .4s;
+            }
+        
+            input:hover {
+                background-color: var(--bleu);
+                color: white;
+            }    
+        }
+    }
+}
+  
+#editor {
+    font-family: "Futura Regular";
+    max-height: 250px;
+    margin-top: 20px;
+    width: 1000px;
+    max-width: 1000px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate; 
+    border: 1px solid rgb(204, 204, 204); 
+    padding: 4px; 
+    box-sizing: content-box; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+    overflow: scroll;
+    outline: none;
+
+    a {
+        text-decoration: underline !important;
+        color: black;
+    }
+
+    span {
+        background-color: none;
+    }
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.actions_actus {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Futura Regular";
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+
+        p {
+            text-align: center;
+        }
+
+        select {
+            display: block;
+            margin: auto;
+        }
+    }
+
+    a {
+        color: black;
+    }
+    
+    input {
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        font-family: "Futura Regular";
+    }
+}
+
+.suppr_button {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.retour {
+    font-family: "Futura Regular";
+    font-size: 20pt;
+    text-align: center;
+
+    a {
+        color: black;
+    }
+}
+
+.ajout_img i {
+    cursor: pointer;
+}
+
+.actions_imgs {
+    margin-top: 30px;
+
+    &_actions {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;  
+    }
+
+    h2 {
+        @include sous_titre;
+        font-size: 25pt;
+    }
+
+    h2:after {
+        @include trait;
+    }
+
+    .ajout_img i {
+        font-size: 35px; 
+    }
+
+    .suppr_img {
+        display: flex;
+        align-items: center;
+
+        i {
+            cursor: pointer;
+            font-size: 35px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.envoi_imgs {
+    text-align: center;
+    margin-top: 30px;
+
+    input {
+        margin: 10px;
+        font-family: "Futura Regular";
+        width: 170px;
+        height: 35px;
+        border: none;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: .4s;
+    }
+
+    input:hover {
+        background-color: var(--bleu);
+        color: white;
+    }    
+}
+
+@media screen and (max-width: 1200px) {
+    .actus {
+        &_post {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .actus {
+        &_post {
+            h2 {
+                font-size: 20pt;
+            }
+        }
+
+        &_a_venir {
+            font-size: 23pt;
+        }
+    }
+}

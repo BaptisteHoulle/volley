@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main_mention_legales.scss",
+        "_pc_mention_legales.scss",
+        "_tablette_mention_legales.scss",
+        "_mobile_mention_legales.scss"
+    ],
+    "names": [],
+    "file": "main_mention_legales.css"
+}

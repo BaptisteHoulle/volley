@@ -1,0 +1,280 @@
+.presentation {
+  background-color: #f1f1f1;
+}
+
+.presentation p, .presentation ul {
+  font-family: 'Futura Book';
+}
+
+.presentation h2 {
+  font-family: 'futuraheavyoblique';
+  font-weight: 100;
+}
+
+.presentation h2:after {
+  background-color: #95ff00;
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+  height: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  content: "";
+}
+
+.presentation__imgheader {
+  background-image: url(img/club.png);
+  background-size: cover;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation__imgheader__titrepage {
+  color: white;
+  font-size: 40pt;
+  font-family: 'futuraheavyoblique';
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bouton {
+  text-align: center;
+}
+
+.bouton__btn {
+  background-color: #95ff00;
+  border: 1px solid #95ff00;
+  color: black;
+  font-size: 16pt;
+  margin: 40px;
+  font-family: 'futuraheavyoblique';
+  cursor: pointer;
+}
+
+.bouton__btn1 {
+  padding: 10px 15px;
+}
+
+.bouton__btn2 {
+  padding: 10px 50px;
+}
+
+.partieune {
+  background-color: white;
+  width: 900px;
+  margin: auto;
+  padding-top: 20px;
+  display: block;
+}
+
+.partieune__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 50px;
+}
+
+.partieune__flex1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partieune__flex1__texte {
+  width: 400px;
+  text-align: justify;
+  margin-left: 90px;
+  font-size: 12pt;
+}
+
+.partieune__flex1__img {
+  margin-left: -30px;
+}
+
+.partieune__flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partieune__flex2__img {
+  margin-left: 60px;
+}
+
+.partieune__flex2__texte {
+  width: 400px;
+  text-align: justify;
+  margin-left: 90px;
+  font-size: 12pt;
+}
+
+.partieune__flex2__textes {
+  margin-top: 60px;
+}
+
+.partiedeux {
+  background-color: white;
+  margin-top: 60px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partiedeux__gauche {
+  width: 700px;
+}
+
+.partiedeux__gauche__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 50px;
+}
+
+.partiedeux__gauche__texte__liste {
+  list-style-type: none;
+  width: 500px;
+  padding: 0;
+}
+
+.partiedeux__droite__img {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.partietrois {
+  background-image: url(img/rencontre.jpg);
+  background-repeat: no-repeat;
+  background-size: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px;
+}
+
+.partietrois__blanc {
+  background-color: white;
+  padding: 20px;
+  width: 600px;
+  -webkit-box-shadow: 10px 10px 2px 1px rgba(116, 116, 116, 0.418);
+          box-shadow: 10px 10px 2px 1px rgba(116, 116, 116, 0.418);
+}
+
+.partietrois__blanc__texte {
+  text-align: justify;
+  width: 550px;
+  display: block;
+  margin: auto;
+}
+
+.partietrois__blanc__texte__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 50px;
+}
+
+.partiequatre {
+  margin-top: 130px;
+  padding: 20px;
+  background-color: white;
+}
+
+.partiequatre__titrepartie {
+  text-align: center;
+  font-size: 25pt;
+}
+
+.fonctions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.fonctions p {
+  font-family: "Futura Regular";
+}
+
+.fonctions .user i {
+  font-size: 50px;
+}
+
+.fonctions_collaborateurs_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+}
+
+.fonctions_collaborateurs_main i {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.fonctions_collaborateurs {
+  width: 85%;
+}
+
+.fonctions_collaborateurs i {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.fonctions_collaborateurs_titre {
+  color: var(--bleu);
+}
+
+.fonctions_collaborateurs_comites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fonctions_sous_fonction {
+  font-weight: 1000;
+}
+
+@media screen and (min-width: 768px) {
+  .partietrois {
+    height: 700px;
+  }
+}
+/*# sourceMappingURL=main_presentation.css.map */

@@ -1,0 +1,136 @@
+.bold {
+    font-weight: bold;
+}
+
+.imgheader {
+    background-image: url(../img/equipes/header.png);
+    @include header;
+
+    &__titrepage {
+        @include titre_header;
+    }
+}
+
+.presentation_entrainements {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.butn {
+    width: calc(80%/3 - 20px);
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--vert);
+    border: 1px solid var(--vert);
+    color: black;
+    font-size: 16pt;
+    margin: 20px;
+    font-family: 'Futura Heavy Italic';
+}
+
+.butn:hover {
+    background-color: var(--gris);
+    color: var(--vert);
+}
+
+.butn.active {
+    background-color: var(--noir);
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 100%;
+    display: none;
+    background: var(--clair);
+}
+
+.show {
+    display: block;
+    overflow: hidden;
+}
+
+.partie1 {
+    display: flex;
+    align-items: center;
+
+    &__gauche {
+        width: 40%;
+        margin: 50px 80px;
+    }
+
+    .equipe {
+        width: 40%;
+        margin: 20px 80px;
+
+        p {
+            font-family: "Futura Book";
+        }
+
+        h2 {
+            @include sous_titre;
+            font-size: 25pt;
+        }
+    
+        h2:after {
+            @include trait;
+        }
+    
+        &_caracteristique {
+            font-size: 20px;
+            color: var(--bleu);
+        }
+    }
+}
+
+@media (min-width: 768px) AND (max-width: 1200px) {
+    .butn {
+        width: calc(80%/2 - 20px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .partie1 {
+        flex-direction: column;
+        align-items: center;
+
+        &__gauche {
+            width: 70%;
+        }
+
+        .equipe {
+            width: 70%;
+        }
+    }
+
+    .presentation_entrainements {
+        iframe {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .butn {
+        width: calc(80% - 20px);
+        height: 30px;
+        font-size: 12pt;
+        margin: 10px 0 10px 0;
+    }
+}

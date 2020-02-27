@@ -1,0 +1,116 @@
+.contact__imgheader {
+    background-image: url(../img/contact/contact.png);
+    @include header;
+
+    &__titre {
+        @include titre_header;
+    }
+}
+
+.contenu {
+    display: flex;
+    margin: 50px auto;
+
+    strong {
+        font-weight: 800;
+    }
+
+    h2 {
+        @include sous_titre;
+        padding-top: 20px;
+        margin: 0;
+    }
+
+    h2::after {
+        @include trait;
+    }
+
+    &__coordonnees {
+        &__description {
+            font-family: "Futura Book";
+            padding-top: 30px;
+            font-size: 15px;
+        }
+
+        &__contact {
+            font-family: "Futura Book";
+            padding-top: 15px;
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+    &__formulaire {
+        form {
+            margin-top: 30px;
+
+            label, input[type="reset"], input[type="submit"] {
+                font-family: "Futura Book";
+            }
+
+            input[type="tel"], input[type="email"], input[type="text"], textarea {
+                width: 100%;
+            }
+
+            input[type="tel"], input[type="email"], input[type="text"] {
+                border: none;
+                border-bottom: 1px solid rgb(206, 206, 206);
+                background: transparent;
+                transition: .2s;
+            }
+
+            input[type="tel"]:focus, input[type="email"]:focus, input[type="text"]:focus {
+                border-bottom: 1px solid black;
+            }
+
+            textarea {
+                height: 200px;
+            }
+
+            .contact_envoi {
+                margin-top: 30px;
+                text-align: center;
+
+                input {
+                    width: 140px;
+                    margin: 5px 10px;
+                    height: 30px;
+                    border: none;
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
+                    transition: .4s;
+                }
+        
+                input:hover {
+                    background-color: var(--bleu);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contenu {
+        justify-content: space-between;
+        width: 900px;
+
+        &__formulaire {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .contenu {
+        flex-direction: column;
+        align-items: center;
+
+        &__formulaire {
+            width: 60%;
+        }
+    }
+}

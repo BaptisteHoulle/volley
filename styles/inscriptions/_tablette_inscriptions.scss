@@ -1,0 +1,51 @@
+@media screen and (min-width:768px) AND (max-width: 1199.99px) {
+    .inscriptions__imgheader {
+        &__titrepage {
+            font-size: 25pt;
+        }
+    }
+
+    .bulletin {
+        width: 700px;
+    }
+
+    .charte {
+        &__partie1 {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__img {
+                img {
+                    width: 500px;
+                }
+            }
+
+            &__texte {
+                margin-top: 0;
+            }
+        }
+
+        &__flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__partie3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__texte {
+                width: 600px;
+                margin: auto;
+            }
+
+            &__img {
+                img {
+                    width: 400px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.form_conteneur {
+    border: 1px solid black;
+    width: 500px;
+    margin: 50px auto; 
+
+    p, h1, label  {
+        font-family: "Futura Regular";
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {     
+        margin: 0 10px;
+    
+        input[type="email"], input[type="password"], input[type="text"] {
+            border: none;
+            border-bottom: 1px solid rgb(206, 206, 206);
+            background: transparent;
+            height: 40px;
+            transition: .2s;
+        }
+
+        input[type="email"] {
+            width: 100%;
+        }
+
+        input[type="password"], input[type="text"] {
+            width: 85%;
+        }
+
+        input[name="mdp"] ~ i, input[name="mdp_modif"] ~ i {
+            margin-left: 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    
+        input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+            border-bottom: 1px solid black;
+        }
+        
+        .envoi {
+            margin-top: 50px;
+            text-align: center;
+    
+            input {
+                cursor: pointer;
+                font-family: "Futura Regular";
+                width: 170px;
+                margin: 0 10px;
+                height: 35px;
+                border: none;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                transition: .4s;
+            }
+    
+            input:hover {
+                background-color: var(--bleu);
+                color: white;
+            }
+        }
+    }
+
+    .modif_ids {
+        cursor: pointer;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+
+.disconnect, .actions {
+    i {
+        font-size: 25px;
+        color: white;
+        transition: .2s;
+        margin: 10px;
+    }
+
+    i:hover {
+        color: var(--vert);
+    }
+}
+
+.table i {
+    cursor: pointer;
+    margin: 0 5px;
+}

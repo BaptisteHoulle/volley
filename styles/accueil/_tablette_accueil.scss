@@ -1,0 +1,506 @@
+@media (min-width: 768px) AND (max-width: 1199.99px) {
+    /* //////////////////////////////// HEADER ////////////////////////////////     */
+
+    nav {
+        z-index: 200000000000000000000;
+    }
+
+    .bg {
+        height: 80vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 0 0 0;
+
+
+            &__logoheader {
+                top: 150px;
+                left: 33%;
+                position: absolute;
+                height: 261px;
+                width: 261px;
+                z-index: 3;
+                filter: drop-shadow(2px 5px 10px rgb(96, 0, 134));
+                -webkit-filter: drop-shadow(2px 5px 10px rgb(96, 0, 134));
+            }
+
+            &__volley {
+                top: 400px;
+                left: 10%;
+                position: absolute;
+                color: var(--blanc);
+                z-index: 5;
+                font-family: 'Futura Heavy';
+                text-shadow: 3px 3px 10px #000000;
+                font-size: 60px;
+
+                &__de {
+                    font-size: 40px;
+                }
+            }
+
+            &__dynamisme {
+                top: 500px;
+                left: 27.5%;
+                position: absolute;
+                color: var(--vert);
+                z-index: 5;
+                font-family: 'Futura Heavy Italic';
+                font-size: 35px;
+            }
+        }
+    }
+
+    /* //////////////////////////////// BODY ////////////////////////////////     */
+
+    .wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        &__cadre {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 0 20px 0;
+        background: var(--clair);
+    }
+
+    .contact {
+        width: 100%;
+        max-width: 100%;
+
+        &__titre {
+            padding: 20px 0 0 0;
+            @include sous_titre;
+            font-size: 30px;
+        }
+
+        &__titre:after {
+            @include trait;
+        }
+
+        &__informations {
+            margin: 0;
+
+            &__conteneur {
+                margin: 90px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 100%;
+                font-size: 23px;
+                color: var(--noir);
+
+                .fas {
+                    font-size: 40px;
+                    margin-right: 10px;
+                }
+
+                &__texte {
+                    display: flex;
+                    align-items: center;
+                    font-family: "Futura Regular";
+
+                    a {
+                        color: var(--noir);
+                    }
+
+                    a:hover {
+                        color: var(--noir);
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttona {
+        position: relative;
+        margin: 0 50px 0 50px;
+        z-index: 1000;
+        width: 180px;
+        height: 61px;
+        line-height: 60px;
+        background-color: var(--primary);
+        color: var(--gris);
+        font-family: 'Futura Heavy';
+        color: var(--noir);
+        text-align: center;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    .buttona:hover {
+        color: var(--noir);
+    }
+
+    .buttona span {
+        display: block;
+        background: var(--gris);
+        transition: 2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+    }
+
+    .buttona span:nth-child(1),
+    .buttona span:nth-child(3) {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+    }
+
+    .buttona span:nth-child(2),
+    .buttona span:nth-child(4) {
+        position: absolute;
+        height: 100%;
+        width: 3px;
+    }
+
+    .buttona span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        transition-delay: 0s;
+    }
+
+    .buttona span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        transition-delay: .2s;
+    }
+
+    .buttona span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        transition-delay: .4s;
+    }
+
+    .buttona span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        transition-delay: .6s;
+    }
+
+    .buttona:hover span:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    .buttona:hover span:nth-child(2) {
+        top: 0;
+        right: 0;
+    }
+
+    .buttona:hover span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+    }
+
+    .buttona:hover span:nth-child(4) {
+        bottom: 0;
+        left: 0;
+    }
+
+    .cotisations {
+        margin-top: 100px;
+        width: 100%;
+        max-width: 100%;
+
+        &__titre {
+            @include sous_titre;
+            font-size: 30px;
+        }
+
+        &__titre:after {
+            @include trait;
+        }
+    }
+
+    /* //////////////////////////////// TABLE ////////////////////////////////     */
+
+    .table {
+        display: flex;
+    }
+
+    .celbold {
+        font-family: 'Futura Heavy';
+    }
+
+    .blueTable:first-child {
+        background-color: #E4E4E4;
+        width: 60%;
+        margin: 0 0 0 7.5%;
+        font-family: 'Futura Regular';
+    }
+
+    .blueTable:last-child {
+        background-color: #E4E4E4;
+        width: 20%;
+        margin: 0 0 0 2.5%;
+        font-family: 'Futura Regular';
+        text-align: center;
+    }
+
+    table.blueTable td,
+    table.blueTable th {
+        border-bottom: 2px solid #FFFFFF;
+    }
+
+    table.blueTable tbody td {
+        font-size: 13px;
+    }
+
+    table.blueTable tr:nth-child(even) {
+        background: #E4E4E4;
+    }
+
+    table.blueTable thead {
+        background: #423084;
+    }
+
+    table.blueTable thead th {
+        font-size: 20x;
+        font-family: 'heavy';
+        font-weight: 2000;
+        color: #FFFFFF;
+        border: none;
+        text-align: center;
+    }
+
+    ////////////////////////////////////////////// entrainements //////////////////////////////////////////////////
+
+    .entrainements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url("../img/accueil/ballon.png");
+        height: 52vh;
+        background-position: top;
+        background-size: 1600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var(--blanc);
+        text-shadow: 3px 3px 10px #000000;
+
+        &__titre {
+            margin: 0 0 20px 0;
+            font-size: 35pt;
+            font-family: 'Futura Heavy Italic';
+        }
+
+        &__texte, &__lieu {
+            font-family: "Futura Regular";
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        &__lieu {
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 40px;
+                margin-right: 10px;
+            }
+        }
+
+        &__horaires {
+            margin: 10px 0;
+
+            &__texte {
+                font-family: "Futura Regular";
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+///////////////////////////////////// FOOTER ////////////////////////////////////////////////////
+
+/* STYLES SPECIFIC TO FOOTER  */
+
+footer {
+    background-color: #070617;
+    color: #FFF;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+    color: #FFF
+
+}
+
+.footer .col-md-2 {
+    display: flex;
+    padding: 50px 0 0 0;
+    width: 190px;
+    height: 278px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.footer .col-md-2 ul {
+    border-top: solid 3px #FFF;
+    padding: 0;
+}
+
+.footer .col-md-2 ul li {
+    margin: 10px 0px 10px 0px;
+}
+
+.footer .col-md-2 ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Futura Regular';
+    text-decoration: none;
+    color: var(--blanc);
+
+    .fas {
+        margin: 0 10px 0 0;
+    }
+}
+
+.footer .col-md-2 ul li a:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+.social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.logocontaint {
+    display: flex;
+    height: 228px;
+
+}
+
+.ow {
+    background: #070617;
+}
+
+.logofooter {
+    height: 125px;
+    width: 125px;
+}
+
+@media (min-width: 768px) AND (max-width: 1199.99px) {
+    .contain {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer .col-md-2 {
+        display: flex;
+        padding: 50px 0 0 0;
+        margin: 0 10px 0 10px;
+        width: 150px;
+        height: 278px;
+    }
+}
+
+@media only screen and (min-width: 0px) {
+    .col-md-2 {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .contain {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1139px) {
+
+    .social h1 {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .footer .col-md-2 {
+        width: 40%;
+    }
+
+    .footer .col-md-2 h1 {
+        font-size: 14px;
+    }
+
+    .footer .col-md-2 ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col-md-2 {
+        width: 50%;
+    }
+
+    .footer .col-md-2 h1 {
+        font-size: 14px;
+    }
+
+    .footer .col-md-2 ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .footer .col-md-2 {
+        width: 100%;
+    }
+
+}

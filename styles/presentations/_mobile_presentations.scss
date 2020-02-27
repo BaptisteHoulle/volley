@@ -1,0 +1,167 @@
+@media screen and (max-width:767px) {
+    .presentation {
+        &__imgheader {
+            &__titrepage {
+                font-size: 20pt;
+            }
+        }
+    }
+
+    .bases_volley {
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .plus {
+        width: 200px;
+    }
+
+    .partiedeux {
+        background-color: white;
+        margin-top: 60px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        margin: 30px auto;
+
+        &__gauche {
+            display: block;
+            margin: auto;
+            width: 70%;
+
+            &__texte {
+                &__liste {
+                    list-style-type: none;
+                    width: 100%;
+                    margin-left: -40px;
+                }
+
+                li {
+                    margin: 5px 0;
+                }
+            }
+
+            &__titrepartie {
+                font-size: 20pt;
+            }
+        }
+
+        &__droite {
+            &__img {
+                width: 80%;
+                height: 80%;
+                display: block;
+                margin: 30px auto;
+            }
+        }
+    }
+
+    .partieune {
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+        display: block;
+
+        &__titrepartie {
+            font-size: 20pt;
+        }
+
+        &__flex1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &__img {
+                margin-left: 30px;
+                width: 60%;
+                height: 60%;
+                margin-top: 30px;
+            }
+
+            &__texte {
+                width: 80%;
+                text-align: justify;
+                margin-left: 30px;
+                font-size: 12pt;
+            }
+        }
+
+        &__flex2 {
+            display: flex;
+            padding-bottom: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &__img {
+                margin-left: 40px;
+                width: 60%;
+                height: 60%;
+                margin-top: 20px;
+
+            }
+
+            &__texte {
+                width: 80%;
+                text-align: justify;
+                margin-left: 30px;
+                font-size: 12pt;
+                margin-top: -10px;
+            }
+
+        }
+    }
+
+    .partietrois {
+        margin: 0;
+
+        &__blanc {
+            padding: 40px;
+            width: 100%;
+            box-shadow: 0px;
+
+            &__texte {
+                width: 100%;
+
+                &__titrepartie {
+                    font-size: 20pt;
+                }
+            }
+        }
+    }
+
+    .partiequatre {
+        margin-top: 50px;
+
+        &__titrepartie {
+            font-size: 20pt;
+        }
+    }
+
+    .fonctions {
+        flex-direction: column;
+        margin: 80px auto;
+        width: 100%;
+
+        &_collaborateurs {
+            &_main, &_comites {
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            &_titre {
+                text-align: center;
+            }
+
+            &_main {
+                width: 100%;
+            }
+        }
+    }
+}

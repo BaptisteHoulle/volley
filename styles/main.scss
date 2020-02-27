@@ -1,0 +1,100 @@
+/* -------------------- CHARTE GRAPHIQUE ------------ */
+
+:root {
+  --blanc: #FFF;
+  --clair: #F1F1F1;
+  --noir: #000;
+  --gris: #303030;
+  --vert: #95ff00;
+  --bleu: #423084;
+}
+
+/************************/
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/************************/
+
+@font-face {
+  font-family: "Futura Heavy";
+  src: url("../font/FuturaStd-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Futura Heavy Italic";
+  src: url("../font/FuturaStd-HeavyOblique.otf");
+}
+
+@font-face {
+  font-family: "Futura Regular";
+  src: url("../font/FuturaStd-Medium.otf");
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../font/FuturaStd-Book.otf");
+}
+
+/************ Mixins ************/
+
+@mixin header {
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin titre_header {
+  color: white;
+  font-size: 40pt;
+  font-weight: 100;
+  font-family: "Futura Heavy Italic";
+}
+
+@mixin sous_titre {
+  font-family: 'Futura Heavy Italic';
+  text-align: center !important;
+  font-weight: 100;
+  color: var(--noir) !important;
+}
+
+@mixin trait {
+  background-color: var(--vert);
+  margin: 0 auto;
+  display: block;
+  width: 20%;
+  height: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  content: "";
+}
+
+/************************/
+
+@import 'accueil/main_accueil';
+@import 'actualites/main_actualites';
+@import 'contact/main_contact';
+@import 'equipes/main_equipes';
+@import 'mention_legales/main_mention_legales';
+@import 'partenaires/main_partenaires';
+@import 'presentations/main_presentation';
+@import 'inscriptions/main_inscriptions';
+@import 'login/login';

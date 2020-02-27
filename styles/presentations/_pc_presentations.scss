@@ -1,0 +1,252 @@
+.presentation {
+    background-color: #f1f1f1;
+
+    p, ul {
+        font-family: 'Futura Book';
+    }
+
+    h2 {
+        @include sous_titre;
+    }
+    
+    h2:after {
+        @include trait;
+    }
+
+    &__imgheader {
+        background-image: url(../img/presentation/presentation.png);
+        @include header;
+    
+        &__titrepage {
+            @include titre_header;
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bouton {
+    text-align: center;
+
+    &__btn {
+        background-color: var(--vert);
+        border: 1px solid var(--vert);
+        color: black;
+        font-size: 16pt;
+        margin: 40px;
+        font-family: 'Futura Heavy Italic';
+        cursor: pointer;
+    }
+
+    &__btn1 {
+        padding: 10px 15px;
+    }
+
+    &__btn2 {
+        padding: 10px 50px;
+    }
+}
+
+.bases_volley {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.plus {
+    width: 300px;
+    margin: 60px auto;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--vert);
+    font-size: 16pt;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 15px;
+
+    a {
+        font-family: 'Futura Heavy Italic';
+        color: black;
+    }
+}
+
+.partieune {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    display: block;
+
+    &__titrepartie {
+        font-size: 25pt;
+        margin-bottom: 50px;
+    }
+
+    &__flex1 {
+        display: flex;
+
+        &__texte {
+            width: 400px;
+            text-align: justify;
+            margin-left: 90px;
+            font-size: 12pt;
+        }
+
+        &__img {
+            margin-left: -30px;
+        }
+    }
+
+    &__flex2 {
+        display: flex;
+
+        &__img {
+            margin-left: 60px;
+        }
+
+        &__texte {
+            width: 400px;
+            text-align: justify;
+            margin-left: 90px;
+            font-size: 12pt;
+        }
+
+        &__textes {
+            margin-top: 60px;
+        }
+    }
+}
+
+.partiedeux {
+    background-color: white;
+    margin-top: 60px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__gauche {
+        width: 700px;
+
+        &__titrepartie {
+            font-size: 25pt;
+            margin-bottom: 50px;
+        }
+
+        &__texte{
+            &__liste {
+                list-style-type: none;
+                width: 500px;
+                padding: 0;
+            }
+        }
+    }
+
+    &__droite {
+        &__img {
+            width: 500px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.partietrois {
+    background-image: url(../img/presentation/rencontre.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+    &__blanc {
+        background-color: white;
+        padding: 20px;
+        width: 600px;
+        box-shadow: 10px 10px 2px 1px rgba(116, 116, 116, 0.418);
+
+        &__texte {
+            text-align: justify;
+            width: 550px;
+            line-height: 1.2;
+            display: block;
+            margin: auto;
+
+            &__titrepartie {
+                font-size: 25pt;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+.partiequatre {
+    margin-top: 130px;
+    padding: 20px;
+    background-color: white;
+
+    &__titrepartie {
+        font-size: 25pt;
+    }
+}
+
+.fonctions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 40px auto;
+
+    p {
+        font-family: "Futura Regular";
+    }
+
+    .user i {
+        font-size: 50px;
+    }
+
+    &_collaborateurs_main {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+
+        i {
+            cursor: pointer;
+            margin: 5px;
+        }
+    }
+
+    &_collaborateurs { 
+        width: 85%;
+
+        i {
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        &_titre {
+            color: var(--bleu);
+            font-weight: 500;
+        }
+
+        &_comites {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    &_sous_fonction {
+        font-weight: 1000;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .partietrois {
+        height: 700px;
+    }
+}

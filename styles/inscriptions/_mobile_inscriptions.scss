@@ -1,0 +1,120 @@
+@media screen and (max-width:768px) {
+    .inscriptions {
+        h3 {
+            font-size: 15pt;
+        }
+    
+        button {
+            font-size: 14pt;
+        }
+
+        &__imgheader {
+            &__titrepage {
+                font-size: 20pt;
+            }
+        }
+    }
+
+    .informations {
+        &__titrepartie {
+            font-size: 18pt;
+        }
+
+        &__download {
+            display: block;
+            margin: auto;
+
+            &__partie {
+                margin: 0px 20px;
+            }
+        }
+    }
+
+    .bulletin {
+        width: 80%;
+
+        &__titrepartie {
+            font-size: 18pt;
+        }
+
+        &__liste {
+            display: block;
+            margin-left: -60px; 
+            width: 120%;
+        }
+    }
+
+    .charte {
+        &__titrepartie {
+            font-size: 18pt;
+        }
+
+        &__titrepartie2 {
+            font-size: 15pt;
+        }
+
+        &__partie1 {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__img {
+                img {
+                    width: 300px;
+                }
+            }
+
+            &__texte {
+                margin-top: 0;
+                margin-left: 30px;
+
+                &__violet {
+                    font-size: 15pt;
+                }
+            }
+        }
+
+        &__flex {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            &__gauche {
+                width: 100%;
+
+                li {
+                    width: 100%;
+                }
+            }
+
+            &__droite {
+                width: 100%;
+
+                li {
+                    width: 80%;
+                }
+            }
+        }
+
+        &__partie3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__texte {
+                width: 80%;
+                margin: auto;
+
+                &__violet {
+                    font-size: 15pt;
+                }
+            }
+
+            &__img {
+                img {
+                    width: 300px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,301 @@
+.inscriptions {
+    background-color: var(--clair);
+
+    h2 {
+        @include sous_titre;
+    }
+    
+    h2:after {
+        @include trait;
+    }
+    
+    h3 {
+        font-family: 'Futura Heavy';
+        font-weight: 100;
+        font-size: 18pt;
+        margin-left: 20px;
+    }
+    
+    h3:after {
+        background-color: var(--vert);
+        margin: 5px 30px;
+        display: block;
+        width: 20%;
+        height: 4px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        content: "";
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+
+    &__imgheader {
+        background-image: url("../img/inscriptions/inscriptions.png");
+        @include header;
+    
+        &__titrepage {
+            @include titre_header;
+        }
+    }
+}
+
+.bulletin {
+    padding: 15px;
+    margin: 20px auto;
+    background-color: white;
+    width: 1100px;
+
+    &__titrepartie {
+        font-size: 25pt;
+        margin-bottom: 40px;
+    }
+
+    &__texteprincipal {
+        font-family: 'Futura Heavy';
+        font-size: 13pt;
+    }
+
+    &__liste {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 20px 0;
+            list-style-type: none;
+        }
+
+        ul {
+            font-family: 'Futura Book';
+            margin: 0 40px;
+        }
+    }
+}
+
+.inscription {
+    margin: 40px auto;
+
+    &__texteprincipal {
+        text-align: center;
+        font-family: 'Futura Heavy'; 
+        font-size: 13pt;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: var(--vert);
+        border: none;
+        color: black;
+        font-size: 16pt;
+        font-family: 'Futura Heavy Italic';
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        padding: 10px 15px;
+
+        a {
+            color: black;
+        }
+    }
+
+    &__boutons {
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+
+        button {
+            margin: 0 20px;
+        }
+        
+        &__ou {
+            font-family: 'Futura Book';
+        }
+    }
+
+    &__bouton {
+        display: block;
+        margin: 30px auto;
+    }
+
+    &_infos_joueur, &_valider_bulletins, &_valider_infos {
+        text-align: center;
+    }
+
+    &_valider_bulletins, &_valider_infos {
+        margin-top: 50px;
+
+        input {
+            font-family: "Futura Regular";
+            width: 200px;
+            height: 35px;
+            border: none;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            transition: .4s;
+        }
+
+        input:hover {
+            background-color: var(--bleu);
+            color: white;
+        }
+    }
+}
+
+.informations {
+    background-color: white;
+    padding: 20px;
+
+    &__titrepartie {
+        font-size: 25pt;
+    }
+
+    &__download {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+
+        &__partie {
+            display: flex;
+            margin: 20px 90px;
+            align-items: center;
+
+            p {
+                font-family: 'Futura Heavy';
+                font-size: 13pt;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.charte {
+    padding-top: 20px;
+
+    &__titrepartie {
+        font-size: 25pt;
+    }
+
+    &__partie1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        &__texte {
+            width: 600px;
+            margin-right: 40px;
+            text-align: justify;
+            margin-top: 20px;
+            font-family: 'Futura Book';
+
+            ul {
+                padding: 0;
+                
+                li {
+                    margin: 10px 0;
+                }
+            }
+
+            &__violet {
+                font-size: 20pt;
+                text-align: center;
+                font-family: 'Futura Heavy Italic';
+                font-weight: 100;
+                color: var(--bleu);
+                margin-bottom: 30px;
+            }
+        }
+
+        &__img {
+            img {
+                width: 600px;
+            }
+        }
+    }
+
+    &__titrepartie2 {
+        text-align: center;
+        font-size: 20pt;
+        font-family: 'Futura Heavy Italic'; 
+        font-weight: 100;
+        color: var(--bleu);
+        margin-bottom: 30px;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+
+        &__gauche {
+            background-color: white;
+            width: 600px;
+            margin: 0 30px;
+
+            ul {
+                font-family: 'Futura Book';
+
+                li {
+                    margin: 10px 0;
+                    font-size: 13pt;
+                }
+            }
+        }
+
+        &__droite {
+            background-color: white;
+            width: 600px;
+            margin: 0 30px;
+
+            ul {
+                font-family: 'Futura Book';
+
+                li {
+                    margin: 10px 0;
+                    font-size: 13pt;
+                }
+            }
+        }
+    }
+
+    &__partie3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        &__img {
+            img {
+                width: 550px;
+                margin-top: 40px;
+                box-shadow: -14px -14px 1px #303030;
+            }
+        }
+
+        &__texte {
+            text-align: justify;
+            margin-left: 60px;
+            width: 550px;
+            font-family: 'Futura Book';
+
+            &__violet {
+                font-size: 20pt;
+                text-align: center;
+                font-family: 'Futura Heavy Italic';
+                font-weight: 100;
+                color: var(--bleu);
+                margin-bottom: 30px;
+            }
+        }
+    }   
+}

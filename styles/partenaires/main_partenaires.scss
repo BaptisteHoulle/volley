@@ -1,0 +1,148 @@
+.partenaires {
+    background-color: var(--clair);
+    
+    &_imgheader {
+        background-image: url(../img/partenaires/partenaires.png);
+        @include header;
+
+        &_titrepage {
+            @include titre_header;
+        }
+    }
+
+    &_titre {
+        @include sous_titre;
+        font-size: 25pt;
+        margin: 30px 0;
+    }
+
+    &_titre:after {
+        @include trait;
+    }
+
+    &_entreprises {
+        width: 1200px;
+        margin: auto;
+    
+        img {
+            width: 11%;
+            margin: 25px;
+        }
+    
+        i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    
+        p, h2, label, input[type="reset"], input[type="submit"] {
+            font-family: "Futura Regular";
+        }
+    
+        h2 {
+            margin-top: 60px;
+        }
+    
+        &_modif, &_ajout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            input[type="reset"], input[type="submit"] {
+                cursor: pointer;
+                width: 80px;
+                height: 35px;
+                border: none;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                transition: .4s;
+            }
+    
+            input[type="reset"]:hover, input[type="submit"]:hover {
+                background-color: var(--bleu);
+                color: white;
+            }
+        }
+    }
+
+    &_dossier {
+        padding: 10px;
+        margin-top: 50px;
+        background-color: white;
+
+        &_devenir {
+            text-align: center;
+            font-family: "Futura Regular";
+            font-size: 20px;
+        }
+
+        &_images {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+    
+            img {
+                width: 40%;
+            }
+        }
+
+        &_download {
+            text-align: center;
+            font-family: "Futura Regular";
+            margin: 50px auto;
+            font-size: 25px;
+            border-radius: 15px;
+            width: 310px;
+            padding: 6px;
+            background-color: var(--vert);
+    
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .partenaires {
+        &_entreprises {   
+            width: 100%;
+        }
+
+        &_dossier {
+            &_images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+                img {
+                    width: 70%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partenaires {
+        &_imgheader {   
+            &_titrepage {
+                font-size: 33pt;
+            }
+        }
+
+        &_dossier {   
+            &_images {
+                img {
+                    width: 80%;
+                }
+            }
+
+            &_download {
+                font-size: 20px;
+                width: 200px;
+            }
+        }
+    }
+}

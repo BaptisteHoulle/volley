@@ -1,0 +1,51 @@
+.partenaires_imghedaer .partenaires_entreprises {
+  width: 1000px;
+  margin: auto;
+}
+
+.partenaires_imghedaer .partenaires_entreprises img {
+  width: 11%;
+  margin: 25px;
+}
+
+.partenaires_imghedaer .partenaires_entreprises i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.partenaires_imghedaer .partenaires_entreprises p, .partenaires_imghedaer .partenaires_entreprises h2, .partenaires_imghedaer .partenaires_entreprises label, .partenaires_imghedaer .partenaires_entreprises input[type="reset"], .partenaires_imghedaer .partenaires_entreprises input[type="submit"] {
+  font-family: "Futura Regular";
+}
+
+.partenaires_imghedaer .partenaires_entreprises h2 {
+  margin-top: 60px;
+}
+
+.partenaires_imghedaer .partenaires_entreprises_modif, .partenaires_imghedaer .partenaires_entreprises_ajout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partenaires_imghedaer .partenaires_entreprises_modif input[type="reset"], .partenaires_imghedaer .partenaires_entreprises_modif input[type="submit"], .partenaires_imghedaer .partenaires_entreprises_ajout input[type="reset"], .partenaires_imghedaer .partenaires_entreprises_ajout input[type="submit"] {
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.partenaires_imghedaer .partenaires_entreprises_modif input[type="reset"]:hover, .partenaires_imghedaer .partenaires_entreprises_modif input[type="submit"]:hover, .partenaires_imghedaer .partenaires_entreprises_ajout input[type="reset"]:hover, .partenaires_imghedaer .partenaires_entreprises_ajout input[type="submit"]:hover {
+  background-color: var(--bleu);
+  color: white;
+}
+/*# sourceMappingURL=main_partenaires.css.map */

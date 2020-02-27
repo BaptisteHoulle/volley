@@ -1,0 +1,92 @@
+.form_conteneur {
+  border: 1px solid black;
+  width: 500px;
+  margin: 50px auto;
+}
+
+.form_conteneur p, .form_conteneur h1, .form_conteneur label {
+  font-family: "Futura Regular";
+}
+
+.form_conteneur h1 {
+  text-align: center;
+}
+
+.form_conteneur form {
+  margin: 0 10px;
+}
+
+.form_conteneur form input[type="email"], .form_conteneur form input[type="password"], .form_conteneur form input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #cecece;
+  background: transparent;
+  height: 40px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.form_conteneur form input[type="email"] {
+  width: 100%;
+}
+
+.form_conteneur form input[type="password"], .form_conteneur form input[type="text"] {
+  width: 85%;
+}
+
+.form_conteneur form input[name="mdp"] ~ i, .form_conteneur form input[name="mdp_modif"] ~ i {
+  margin-left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.form_conteneur form input[type="email"]:focus, .form_conteneur form input[type="password"]:focus, .form_conteneur form input[type="text"]:focus {
+  border-bottom: 1px solid black;
+}
+
+.form_conteneur form .envoi {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form_conteneur form .envoi input {
+  cursor: pointer;
+  font-family: "Futura Regular";
+  width: 170px;
+  margin: 0 10px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.form_conteneur form .envoi input:hover {
+  background-color: var(--bleu);
+  color: white;
+}
+
+.form_conteneur .modif_ids {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.disconnect i, .actions i {
+  font-size: 25px;
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin: 10px;
+}
+
+.disconnect i:hover, .actions i:hover {
+  color: var(--vert);
+}
+
+.table i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+/*# sourceMappingURL=login.css.map */
